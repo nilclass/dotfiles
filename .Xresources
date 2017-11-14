@@ -1,0 +1,3 @@
+Rxvt.reverseVideo: true
+Rxvt.scrollBar: false
+Rxvt.font: xft:monospace:dpi=130
