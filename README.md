@@ -7,3 +7,9 @@ My dotfiles for:
 
 On a T460p (with WQHD display).
 
+
+--
+
+Also:
+gsettings set org.gnome.settings-daemon.plugins.xsettings overrides "[{'Gdk/WindowScalingFactor', <2>}]"
+
