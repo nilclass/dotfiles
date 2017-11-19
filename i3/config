@@ -97,6 +97,9 @@ bindsym Mod4+space focus mode_toggle
 # focus the parent container
 bindsym Mod4+a focus parent
 
+bindsym --release Print exec scrot -e 'mv $f ~/screenshots && eog ~/screenshots/$f'
+bindsym --release Shift+Print exec scrot -s -e 'mv $f ~/screenshots && eog ~/screenshots/$f'
+
 # focus the child container
 #bindsym Mod4+d focus child
 
@@ -130,6 +133,10 @@ bindsym Mod4+Shift+7 move container to workspace 7
 bindsym Mod4+Shift+8 move container to workspace 8
 bindsym Mod4+Shift+9 move container to workspace 9
 bindsym Mod4+Shift+0 move container to workspace 10
+
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
